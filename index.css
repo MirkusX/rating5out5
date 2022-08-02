@@ -55,6 +55,13 @@ li:focus {
     color: #FC7514
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+button:disabled {
+    background: gray;
+}
 
 div {
     text-align: center;
