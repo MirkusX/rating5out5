@@ -1,23 +1,23 @@
 body {
     background-color: hsl(228, 11%, 9%);
-    color: white;
     font-family: sans-serif;
 }
 
 section {
     background-color: #1E252F;
     width: 500px;
-    margin: 0 auto;
-    border-radius: 10px;
     height: 255px;
 }
 
 h1 {
-    margin-left: 30px;
     padding-top: 30px;
 }
 
-p {
+.white {
+    color: white;
+}
+
+.left {
     margin-left: 30px;
 }
 
@@ -25,11 +25,13 @@ button {
     background: #FC7514;
     border: none;
     padding: 10px 150px;
-    border-radius: 10px;
-    color: white;
 }
 
-.button-div {
+.smoothskin {
+    border-radius: 10px;
+}
+
+.center {
     margin: 0 auto;
 }
 
@@ -42,20 +44,18 @@ li {
     height: 8px;
     width: 8px;
     line-height: 8px;
-    text-align: center;
 }
 
 li:hover {
     background-color: #FC7514;
-    cursor: pointer;
 }
 
 li:focus {
     background-color: white;
-    color: #FC7514
+    color: #FC7514;
 }
 
-button:hover {
+button:hover, li:hover {
     cursor: pointer;
 }
 
@@ -64,10 +64,12 @@ button:disabled {
 }
 
 div {
-    text-align: center;
     margin-bottom: 25px;
 }
 
+.text-center {
+    text-align: center;
+}
 
 @media screen and (max-width: 1000px) {
     section{
