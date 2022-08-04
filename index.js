@@ -9,35 +9,35 @@ submit.disabled = "true"
 let rated = 0
 
 rating1.addEventListener("click", function(){
-    submit.disabled = false
+    submitEnable()
     console.log("click")
     rated = 1
 })
 
 
 rating2.addEventListener("click", function(){
-    submit.disabled = false
+    submitEnable()
     console.log("click")
     rated = 2
 })
 
 
 rating3.addEventListener("click", function(){
-    submit.disabled = false
+    submitEnable()
     console.log("click")
     rated = 3
 })
 
 
 rating4.addEventListener("click", function(){
-    submit.disabled = false
+    submitEnable()
     console.log("click")
     rated = 4
 })
 
 
 rating5.addEventListener("click", function(){
-    submit.disabled = false
+    submitEnable()
     console.log("click")
     rated = 5
 })
@@ -49,3 +49,7 @@ submit.addEventListener("click", function(){
     document.querySelector("div").style.opacity = "0.5"
     submit.remove()
 })
+
+function submitEnable() {
+    submit.disabled = false
+}
